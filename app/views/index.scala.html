@@ -10,6 +10,7 @@
   <li>
     @task.label
     @form(routes.HomeController.deleteTask(task.id)){
+    @CSRF.formField
       <input type = "submit" value = "Delete">
     }
     </li>
@@ -18,6 +19,7 @@
 
   <h2>Add a new task</h2>
    @form(routes.HomeController.newTask){
+     @CSRF.formField
      @inputText(taskForm("label"))
      <input type = "submit" value = "Create">
    }
