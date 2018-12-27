@@ -7,6 +7,7 @@ import play.api.db.Database
 import play.api.mvc.{AbstractController, ControllerComponents}
 import models.Task
 
+
 /**
   * This controller creates an `Action` to handle HTTP requests to the
   * application's home page.
